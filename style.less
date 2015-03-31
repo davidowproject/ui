@@ -1,29 +1,29 @@
 /* This is based on the Flat UI HTML at http://designmodo.github.io/Flat-UI/ and BootStrap HTML */
 
 /*development fork*/
-@import url(http://fonts.googleapis.com/css?family=Oswald);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Oswald); /*import oswald font family*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans); /*import open sans font family*/
 
-@darkThemeBackground:#3b3c3e;
-@darkThemeColor:red;
-@paragraphFont:Open Sans;
-@highlightY: #eaca5d;
-@headerFont:'Oswald', sans-serif;
-@bodyFont:'Open Sans', sans-serif;
-@boxBorder: 1 pt solid #a1a1a1;
-@lightGrey: #a1a1a1;
+@darkGrey:#3b3c3e; /*dark theme background color*/
+@offWhite:#ebebeb; /*dark theme text color*/
+@lightGrey: #999ba1; /*dark theme button indention*/
+@highlightY: #eaca5d; /*yellow used for links & active states*/
+@highlightB: #4fc5e7; /*blue used for links & active states*/
+@headerFont:'Oswald', sans-serif; /*font type used for headers*/
+@bodyFont:'Open Sans', sans-serif; /*font type used for all other text*/
+
 
 h1, h2, h3, h4, h5, h6{
   font-family:@headerFont;
 }
 body{
-  background-color:@darkThemeBackground;
-  color:@darkThemeColor;
+  background-color:@darkGrey;
+  color:@offWhite;
   font-family:@bodyFont;
 }
 a {
   text-decoration: none;
-  color: @darkThemeColor;
+  color: @offWhite;
 }
 
 /*checkbox styles*/
@@ -34,7 +34,7 @@ input[type="checkbox"]{
  cursor:pointer;
  position:relative;
  line-height:1.2em;
- background-color:@darkThemeColor;
+ background-color:@offWhite;
  vertical-align:top;
 }
 input[type="checkbox"]:checked {
@@ -57,7 +57,6 @@ input[type="checkbox"]:checked:after {
  font-size:1rem;
 }
 
-
 /*radio styles*/
 input[type="radio"] {
  -webkit-appearance:none;/* Hides the default checkbox style */ 
@@ -66,7 +65,7 @@ input[type="radio"] {
  cursor:pointer;
  position:relative;
  line-height:1.2em;
- background-color:@darkThemeColor;
+ background-color:@offWhite;
  vertical-align:top;
  border-radius:2em;
 }
@@ -76,7 +75,7 @@ input[type="radio"]:checked {
 input[type="radio"]:before, input[type="radio"]:checked:before {
  position:relative;
  top:0;
- left:0;
+ left:0
  width:100%;
  height:100%;
  line-height:1.2em;
@@ -87,11 +86,9 @@ input[type="radio"]:before, input[type="radio"]:checked:before {
 input[type="radio"]:checked:after {
  content:'◉';
  color:@highlightY;
- background-color:@darkThemeBackground;
+ background-color:@darkGrey;
  font-size:.8rem;
 }
-
-
 
 /*switch background*/
 input[data-toggle="switch"]{
@@ -101,14 +98,13 @@ input[data-toggle="switch"]{
  cursor:pointer;
  position:relative;
  line-height:2em;
- background-color:@darkThemeColor;
+ background-color:@offWhite;
  vertical-align:top;
 }
 /*when checked, changes to yellow*/
 input[data-toggle="switch"]:checked {
  background-color:@highlightY;
 }
-
 /*on Section*/
 input[data-toggle="switch"]:before{
  position:relative;
@@ -125,108 +121,15 @@ input[data-toggle="switch"]:before{
  padding-left:.2em;
  padding-right:.2em;
 }
-/*space left of off button
- input[data-toggle="switch"]:checked:before, input[data-toggle="switch"]:checked:after {
- position:relative;
- top:0;
- left:0;
- width:100%;
- height:100%;
- line-height:.9em;
- text-align:center;
- color:black;
- content: '';
- font-size:1rem;
- background-color:@lightGrey;
- }*/
-
 /*off section*/
 input[data-toggle="switch"]:checked:after {
  content: 'OFF';
  line-height:.9em;
  font-size:1rem;
- background-color:@darkThemeColor;
+ background-color:@offWhite;
  margin-left:1.1em;
  padding-left:.2em;
  padding-right:.2em;
 }
 
-
-
-
-
-/*switch styles*/
-/*table input[type="checkbox"]{
- -webkit-appearance:none;/* Hides the default checkbox style */ 
- /*height:1.7em;
- width:3rem;
- cursor:pointer;
- position:relative;
- line-height:2em;
- background-color:@darkThemeColor;
- vertical-align:top;
-}
-/*table input[type="checkbox"]:checked {
- background-color:@highlightY;
-}*/
-/*table input[type="checkbox"]:before,  table input[type="checkbox"]:checked:before {
- position:relative;
- top:0;
- left:0;
- width:100%;
- height:100%;
- line-height:1.2em;
- text-align:center;
- color:@darkThemeBackground;
- content: 'ON';
- font-size:.8rem;
- background-Color:@highlightY;
- font-family:@headerFont;
- padding-left:.5em;
- padding-right:.5em;
-}
- table input[type="checkbox"]:after, table input[type="checkbox"]:checked:after {
-  content:'OFF';
-  background-color: @darkThemeColor;
-  color:@darkThemeBackground;
-  cursor: pointer;
-  display: block;
-  font-family: @headerFont;
-  height: 1.2rem;
-  line-height: 1.2rem;
-  position: absolute;
-  top: 0%;
-  right:0%;
-  padding-left:5px;
-  padding-right:5px;
-  margin-left:17px;
-  width: 20px;   
- /*  
- position:relative;
- top:0;
-
- right:999;
-
- width:100%;
- height:100%;
- line-height:1.2em;
- text-align:center;
- color:white;
- content: 'OFF';
- font-size:.8rem;
- background-Color:@lightGrey;
- font-family:@headerFont;
- padding-left:.5em;
- padding-right:.5em;
-   
- /*content: 'OFF';
- line-height:1em;
- font-size:.8rem;
- color:blue;
- font-family:@headerFont;
- background-Color:@lightGrey;
- padding-left:.5em;
- padding-right:.5em;
- margin-left:1em;
- */
  

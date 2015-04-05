@@ -16,14 +16,21 @@
 h1, h2, h3, h4, h5, h6{
   font-family:@headerFont;
 }
+
 body{
   background-color:@darkGrey;
   color:@offWhite;
   font-family:@bodyFont;
 }
+
 a {
   text-decoration: none;
   color: @offWhite;
+}
+
+ul {
+  list-style-type: square;
+  color: @highlightY;
 }
 
 /*checkbox styles*/
@@ -37,9 +44,11 @@ input[type="checkbox"]{
  background-color:@offWhite;
  vertical-align:top;
 }
+
 input[type="checkbox"]:checked {
  background-color:@highlightY;
 }
+
 input[type="checkbox"]:before, input[type="checkbox"]:checked:before {
  position:relative;
  top:0;
@@ -51,6 +60,7 @@ input[type="checkbox"]:before, input[type="checkbox"]:checked:before {
  color:black;
  content: '';
 }
+
 input[type="checkbox"]:checked:after {
  content: '\2713';
  line-height:.9em;
@@ -69,9 +79,11 @@ input[type="radio"] {
  vertical-align:top;
  border-radius:2em;
 }
+
 input[type="radio"]:checked {
  background-color:@highlightY;
 }
+
 input[type="radio"]:before, input[type="radio"]:checked:before {
  position:relative;
  top:0;
@@ -83,6 +95,7 @@ input[type="radio"]:before, input[type="radio"]:checked:before {
  color:black;
  content: '';
 }
+
 input[type="radio"]:checked:after {
  content:'◉';
  color:@highlightY;
@@ -101,10 +114,12 @@ input[data-toggle="switch"]{
  background-color:@offWhite;
  vertical-align:top;
 }
+
 /*when checked, changes to yellow*/
 input[data-toggle="switch"]:checked {
  background-color:@highlightY;
 }
+
 /*on Section*/
 input[data-toggle="switch"]:before{
  position:relative;
@@ -121,6 +136,7 @@ input[data-toggle="switch"]:before{
  padding-left:.2em;
  padding-right:.2em;
 }
+
 /*off section*/
 input[data-toggle="switch"]:checked:after {
  content: 'OFF';
@@ -132,4 +148,76 @@ input[data-toggle="switch"]:checked:after {
  padding-right:.2em;
 }
 
+/* toggle nav button; uses jquery for it to work*/
+.navbar-toggle {
+  color: @offWhite;
+  font-size: h2;
+  padding:12px;
+  background-color: @darkGrey;
+  border: 1px solid @offWhite;
+  font-family: @headerFont;
+  font-size: h5;
+  text-transform: uppercase;
+  width: 200px;
+  outline: none;
+  font-weight: bold;
+}
+
+/* active state of toggle nav bar button*/
+.navbar-toggle:active {
+  color: @darkGrey;
+  padding:12px;
+  background-color: @offWhite;
+  border: 1px solid @offWhite;
+  font-family: @headerFont;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 200px;
+  outline: none;
+}
+
+/* search bar inside toggle nav button - added this id for search bar*/
+#navbarInput-01{
+  color: @offWhite;
+  padding:12px;
+  background-color: @darkGrey;
+  border: 1px solid @offWhite;
+  font-family: @headerFont;
+  font-weight: bold;
+  font-size: 15px;
+  outline: none;
+}
+
+/* style for input inside search bar inside toggle nav bar - added this id for search bar*/
+#navbarInput-01:focus {
+  color: @darkGrey;
+  padding:12px;
+  background-color: @offWhite;
+  border: 1px solid @offWhite;
+  font-family: @headerFont;
+  font-weight: bold;
+  font-size: 15px;
+  outline: none;
+}
+
+/* removes orginal cancel 'x' for search bar inside toggle nav button*/
+#navbarInput-01::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+
+/* 'x' cancel for search bar inside toggle nav*/
+#navbarInput-01::-webkit-search-cancel-button:after { 
+  content: 'x';
+  color: @darkGrey;
+  width: 20px;
+  height: 20px;
+}
+
+/* changes search bar enter button to yellow square*/
+#submitbutton{
+	height: 20px;
+  width: 20px;
+  border: none;
+  background-color: @highlightY;
+}
  

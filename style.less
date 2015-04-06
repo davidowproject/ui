@@ -228,4 +228,39 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
   border: none;
   background-color: @highlightY;
 }
+
+/**********drop down menu styles**********/
+.dropdown-menu {  
+  background: @darkGrey;
+}
+
+.dropdown-menu a:link{
+    color: @offWhite;
+    text-decoration: none;
+}
+
+.dropdown-menu li:hover {  /*Highlights list items on hover*/
+  background: @highlightY;
+}
+#dropdownbutton{ /*Dropdown button settings*/
+  color: @offWhite;
+  padding:12px;
+  background-color: @darkGrey;
+  border: 1px solid @offWhite;
+  font-family: @headerFont;
+  text-transform: uppercase;
+  width: 200px;
+  outline: none;
+}
+#dropdownbutton:active { /*Dropdown settings when pressed*/
+  color: @darkGrey;
+  padding:12px;
+  background-color: @offWhite;
+  border: 1px solid @offWhite;
+  font-family: @headerFont;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 200px;
+  outline: none;
+}
  

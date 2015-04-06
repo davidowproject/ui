@@ -37,71 +37,46 @@ ul {
 /**********checkbox styles**********/
 input[type="checkbox"]{
  -webkit-appearance:none;/* Hides the default checkbox style */ 
- height:1.2em;
- width:1.2em;
+ height:1.2em;/*height of checkbox*/
+ width:1.2em;/*width of checkbox*/
  cursor:pointer;
  position:relative;
- line-height:1.2em;
- background-color:@offWhite;
- vertical-align:top;
+ line-height:1.2em;/*placement of checkmark within box*/
+ background-color:@offWhite;/*color of unchecked box*/
+ vertical-align:top;/*alignment of checkbox to text*/
 }
-
 input[type="checkbox"]:checked {
- background-color:@highlightY;
+ background-color:@highlightY;/*color of active state checkbox*/
 }
-
-input[type="checkbox"]:before, input[type="checkbox"]:checked:before {
- position:relative;
- top:0;
- left:0;
- width:100%;
- height:100%;
- line-height:1.2em;
- text-align:center;
- color:black;
- content: '';
-}
-
 input[type="checkbox"]:checked:after {
- content: '\2713';
- line-height:.9em;
- font-size:1rem;
+ content: '✓';/*checkmark*/
+ line-height:.9em;/*placement of checkmark within box*/
+ font-size:1.1rem;/*checkmark size*/
 }
 
 /**********radio styles**********/
-input[type="radio"] {
- -webkit-appearance:none;/* Hides the default checkbox style */ 
+input[type="radio"]{
+-webkit-appearance:none;/* Hides the default checkbox style */ 
  height:1.2em;
  width:1.2em;
  cursor:pointer;
  position:relative;
  line-height:1.2em;
- background-color:@offWhite;
- vertical-align:top;
- border-radius:2em;
+ background-color:@offWhite;/*unactive state color - center of button*/
+ vertical-align:top;/*alignment of radio button to text*/
+border-radius: 50%;/*set circle in unactive state*/
+ width: 15px;/*set circle width in unactive state*/
+ height: 15px;/*set circle height in unactive state*/
+border: .13rem solid @offWhite;/*outter circle*/
+box-shadow: inset 0px 0px 0px 2px @darkGrey;/*sets grey circle within active button*/
 }
-
 input[type="radio"]:checked {
- background-color:@highlightY;
-}
-
-input[type="radio"]:before, input[type="radio"]:checked:before {
- position:relative;
- top:0;
- left:0
- width:100%;
- height:100%;
- line-height:1.2em;
- text-align:center;
- color:black;
- content: '';
-}
-
-input[type="radio"]:checked:after {
- content:'◉';
- color:@highlightY;
- background-color:@darkGrey;
- font-size:.8rem;
+ background-color:@highlightY;/*active state color - center of button*/
+ border-radius: 50%;/*set circle in active state*/
+ width: 15px;/*set circle width in active state*/
+ height: 15px;/*set circle height in active state*/
+border: .13rem solid @highlightY;/*outter circle*/
+box-shadow: inset 0px 0px 0px 2px @darkGrey;/*sets grey circle within active button*/
 }
 
 /**********switch styles & transitions***********/

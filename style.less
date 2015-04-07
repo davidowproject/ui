@@ -103,74 +103,74 @@ ul {
 
 /**********checkbox styles**********/
 input[type="checkbox"]{
- -webkit-appearance:none;/* Hides the default checkbox style */ 
- height:1.2em;/*height of checkbox*/
- width:1.2em;/*width of checkbox*/
- cursor:pointer;
- position:relative;
- line-height:1.2em;/*placement of checkmark within box*/
- background-color:@offWhite;/*color of unchecked box*/
- vertical-align:top;/*alignment of checkbox to text*/
+  -webkit-appearance:none;/* Hides the default checkbox style */ 
+  height:1.2em;/*height of checkbox*/
+  width:1.2em;/*width of checkbox*/
+  cursor:pointer;
+  position:relative;
+  line-height:1.2em;/*placement of checkmark within box*/
+  background-color:@offWhite;/*color of unchecked box*/
+  vertical-align:top;/*alignment of checkbox to text*/
 }
 input[type="checkbox"]:checked {
- background-color:@highlightY;/*color of active state checkbox*/
+  background-color:@highlightY;/*color of active state checkbox*/
 }
 input[type="checkbox"]:checked:after {
- content: '✓';/*checkmark*/
- line-height:.9em;/*placement of checkmark within box*/
- font-size:1.1rem;/*checkmark size*/
+  content: '✓';/*checkmark*/
+  line-height:.9em;/*placement of checkmark within box*/
+  font-size:1.1rem;/*checkmark size*/
 }
 
 /**********radio styles**********/
 input[type="radio"]{
--webkit-appearance:none;/* Hides the default checkbox style */ 
- height:1.2em;
- width:1.2em;
- cursor:pointer;
- position:relative;
- line-height:1.2em;
- background-color:@offWhite;/*unactive state color - center of button*/
- vertical-align:top;/*alignment of radio button to text*/
-border-radius: 50%;/*set circle in unactive state*/
- width: 15px;/*set circle width in unactive state*/
- height: 15px;/*set circle height in unactive state*/
-border: .13rem solid @offWhite;/*outter circle*/
-box-shadow: inset 0px 0px 0px 2px @darkGrey;/*sets grey circle within active button*/
+  -webkit-appearance:none;/* Hides the default checkbox style */ 
+  height:1.2em;
+  width:1.2em;
+  cursor:pointer;
+  position:relative;
+  line-height:1.2em;
+  background-color:@offWhite;/*unactive state color - center of button*/
+  vertical-align:top;/*alignment of radio button to text*/
+  border-radius: 50%;/*set circle in unactive state*/
+  width: 15px;/*set circle width in unactive state*/
+  height: 15px;/*set circle height in unactive state*/
+  border: .13rem solid @offWhite;/*outter circle*/
+  box-shadow: inset 0px 0px 0px 2px @darkGrey;/*sets grey circle within active button*/
 }
 input[type="radio"]:checked {
- background-color:@highlightY;/*active state color - center of button*/
- border-radius: 50%;/*set circle in active state*/
- width: 15px;/*set circle width in active state*/
- height: 15px;/*set circle height in active state*/
-border: .13rem solid @highlightY;/*outter circle*/
-box-shadow: inset 0px 0px 0px 2px @darkGrey;/*sets grey circle within active button*/
+  background-color:@highlightY;/*active state color - center of button*/
+  border-radius: 50%;/*set circle in active state*/
+  width: 15px;/*set circle width in active state*/
+  height: 15px;/*set circle height in active state*/
+  border: .13rem solid @highlightY;/*outter circle*/
+  box-shadow: inset 0px 0px 0px 2px @darkGrey;/*sets grey circle within active button*/
 }
 
 /**********switch styles & transitions***********/
-  .ui-flipswitch {
+.ui-flipswitch {
   font-family:@headerFont;
   color:black;/*color of ON/OFF text*/
-	background-color:@lightGrey; /*background color for both sides/all of switch*/
-	display: inline-block;
-	vertical-align: middle;
-	width: 5em; /* width of OFF state switch*/
-	height: 1.875em;/*height of switches*/
-	margin: .4em 0;/*spacing around buttons -bottom, left*/
-	overflow: hidden;
-	-webkit-transition-property: padding, width, background-color, color;
-	-moz-transition-property: padding, width, background-color, color;
-	-o-transition-property: padding, width, background-color, color;
-	transition-property: padding, width, background-color, color;
-	-webkit-transition-duration: 100ms;
-	-moz-transition-duration: 100ms;
-	-o-transition-duration: 100ms;
-	transition-duration: 100ms;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	cursor: pointer;
+  background-color:@lightGrey; /*background color for both sides/all of switch*/
+  display: inline-block;
+  vertical-align: middle;
+  width: 5em; /* width of OFF state switch*/
+  height: 1.875em;/*height of switches*/
+  margin: .4em 0;/*spacing around buttons -bottom, left*/
+  overflow: hidden;
+  -webkit-transition-property: padding, width, background-color, color;
+  -moz-transition-property: padding, width, background-color, color;
+  -o-transition-property: padding, width, background-color, color;
+  transition-property: padding, width, background-color, color;
+  -webkit-transition-duration: 100ms;
+  -moz-transition-duration: 100ms;
+  -o-transition-duration: 100ms;
+  transition-duration: 100ms;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
 }
 .ui-flipswitch.ui-flipswitch-active {
 	padding-left: 3em;  /*keeps width of ON state same as OFF state */
@@ -277,7 +277,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 
 /* removes orginal cancel 'x' for search bar inside toggle nav button*/
 #navbarInput-01::-webkit-search-cancel-button{
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 /* 'x' cancel for search bar inside toggle nav*/
@@ -302,8 +302,8 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 }
 
 .dropdown-menu a:link{
-    color: @offWhite;
-    text-decoration: none;
+  color: @offWhite;
+  text-decoration: none;
 }
 
 .dropdown-menu li:hover {  /*Highlights list items on hover*/
@@ -364,7 +364,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: .5px;
-  }
+}
   
   /**********tags input**********/
 .tagsinput-primary{
@@ -406,28 +406,25 @@ body {
 }
 	
 input.text {
-	background: @darkGrey;
- 
-	display: block;
-	border: 2px solid  rgba(235, 235, 235, 1);
-        box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.15);
-	padding: 8px;
-	position: relative;
-	font-size: 13px;
-	margin: 50px auto;
-	width: 180px;
-	font-family: 'Open Sans', sans-serif;
-	
-	-webkit-transition: all .2s ease;
-	-moz-transition: all .2s ease;
-	-ms-transition: all .2s ease;
-	-o-transition: all .2s ease;
-	transition: all .2s ease;
-  
+  background: @darkGrey;
+  display: block;
+  border: 2px solid  rgba(235, 235, 235, 1);
+  box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.15);
+  padding: 8px;
+  position: relative;
+  font-size: 13px;
+  margin: 50px auto;
+  width: 180px;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
   -moz-border-radius: 2px;
--webkit-border-radius: 2px;
-border-radius: 2px; /* future proofing */
--khtml-border-radius: 10px; /* for old Konqueror browsers */
+  -webkit-border-radius: 2px;
+  border-radius: 2px; /* future proofing */
+  -khtml-border-radius: 10px; /* for old Konqueror browsers */
 }
 		
 input.text:focus {

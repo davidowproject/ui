@@ -17,7 +17,6 @@
 h1, h2, h3, h4, h5, h6{
   font-family:@headerFont;
 }
-
 body{
   background-color:@darkGrey;
   color:@offWhite;
@@ -32,6 +31,77 @@ a {
 ul {
   list-style-type: square;
   color: @highlightY;
+}
+
+/*******Buttons*******/
+body{
+  background-color: @darkGrey
+}
+.btn-inactive {
+  -moz-box-shadow: 2px 2px 1px 1px #292929;
+	-webkit-box-shadow: 2px 2px 1px 1px #292929;
+	box-shadow: 2px 2px 1px 1px #292929;
+	background-color:transparent;
+	-webkit-border-top-left-radius:2px;
+	-moz-border-radius-topleft:2px;
+	border-top-left-radius:2px;
+	-webkit-border-top-right-radius:2px;
+	-moz-border-radius-topright:2px;
+	border-top-right-radius:2px;
+	-webkit-border-bottom-right-radius:2px;
+	-moz-border-radius-bottomright:2px;
+	border-bottom-right-radius:2px;
+	-webkit-border-bottom-left-radius:2px;
+	-moz-border-radius-bottomleft:2px;
+	border-bottom-left-radius:2px;
+	text-indent:0px;
+	border:2px solid @offWhite;
+	display:inline-block;
+	color:@offWhite;
+	font-family:@headerFont;
+	font-size:20px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:200px;
+	text-decoration:none;
+	text-align:center;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn-active {
+  -moz-box-shadow:inset 2px 2px 1px 1px #292929;
+	-webkit-box-shadow:inset 2px 2px 1px 1px #292929;
+	box-shadow:inset 2px 2px 1px 1px #292929;
+	background-color:@highlightY;
+	-webkit-border-top-left-radius:2px;
+	-moz-border-radius-topleft:2px;
+	border-top-left-radius:2px;
+	-webkit-border-top-right-radius:2px;
+	-moz-border-radius-topright:2px;
+	border-top-right-radius:2px;
+	-webkit-border-bottom-right-radius:2px;
+	-moz-border-radius-bottomright:2px;
+	border-bottom-right-radius:2px;
+	-webkit-border-bottom-left-radius:2px;
+	-moz-border-radius-bottomleft:2px;
+	border-bottom-left-radius:2px;
+	text-indent:0px;
+	display:inline-block;
+	color:@darkGrey;
+	font-family:@headerFont;
+	font-size:20px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:200px;
+	text-decoration:none;
+	text-align:center;
 }
 
 /**********checkbox styles**********/

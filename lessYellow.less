@@ -1,0 +1,700 @@
+/* This is based on the Flat UI HTML at http://designmodo.github.io/Flat-UI/ and BootStrap HTML */
+
+/*development fork*/
+@import url(http://fonts.googleapis.com/css?family=Oswald); /*import oswald font family*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans); /*import open sans font family*/
+
+@darkGrey:#3b3c3e; /*dark theme background color*/
+@offWhite:#ebebeb; /*dark theme text color*/
+@lightGrey: #999ba1; /*dark theme button indention*/
+@highlight: #eaca5d; /*highlight color*/
+/*@highlightB: #4fc5e7;
+  @highlightY: #eaca5d*/
+@headerFont:'Oswald', sans-serif; /*font type used for headers*/
+@bodyFont:'Open Sans', sans-serif; /*font type used for all other text*/
+
+// variable for color swatch square
+.square {
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border: 10px solid #fff;
+  display: inline-block;
+  margin-right: -12px;
+  font-size: h4;
+}
+
+// variable - style for an inactive button
+.inactivebutton {
+   -moz-box-shadow: 2px 2px 1px 1px #292929;
+  -webkit-box-shadow: 2px 2px 1px 1px #292929;
+  box-shadow: 2px 2px 1px 1px #292929;
+  background-color:transparent;
+  -webkit-border-top-left-radius:2px;
+  -moz-border-radius-topleft:2px;
+  border-top-left-radius:2px;
+  -webkit-border-top-right-radius:2px;
+  -moz-border-radius-topright:2px;
+  border-top-right-radius:2px;
+  -webkit-border-bottom-right-radius:2px;
+  -moz-border-radius-bottomright:2px;
+  border-bottom-right-radius:2px;
+  -webkit-border-bottom-left-radius:2px;
+  -moz-border-radius-bottomleft:2px;
+  border-bottom-left-radius:2px;
+  text-indent:0px;
+  border:2px solid @offWhite;
+  display:inline-block;
+  color:@offWhite;
+  font-family:@headerFont;
+  font-size:20px;
+  height:50px;
+  line-height:55px;
+  width:200px;
+  text-transform: uppercase;
+  text-decoration:none;
+  text-align:center;
+}
+
+// variable for active style button
+.activebutton {
+  -moz-box-shadow:inset 2px 2px 1px 1px #292929;
+  -webkit-box-shadow:inset 2px 2px 1px 1px #292929;
+  box-shadow:inset 2px 2px 1px 1px #292929;
+  background-color:@highlight;
+  -webkit-border-top-left-radius:2px;
+  -moz-border-radius-topleft:2px;
+  border-top-left-radius:2px;
+  -webkit-border-top-right-radius:2px;
+  -moz-border-radius-topright:2px;
+  border-top-right-radius:2px;
+  -webkit-border-bottom-right-radius:2px;
+  -moz-border-radius-bottomright:2px;
+  border-bottom-right-radius:2px;
+  -webkit-border-bottom-left-radius:2px;
+  -moz-border-radius-bottomleft:2px;
+  border-bottom-left-radius:2px;
+  text-indent:0px;
+  display:inline-block;
+  color:@darkGrey;
+  font-family:@headerFont;
+  font-size:20px;
+  text-transform: uppercase;
+  height:50px;
+  line-height:55px;
+  width:200px;
+  text-decoration:none;
+  text-align:center;
+ border:none;
+  -moz-box-shadow:inset 2px 2px 1px 1px #292929;
+  -webkit-box-shadow:inset 2px 2px 1px 1px #292929;
+  box-shadow:inset 2px 2px 1px 1px #292929;
+  background-color:@highlight;
+  -webkit-border-top-left-radius:2px;
+  -moz-border-radius-topleft:2px;
+  border-top-left-radius:2px;
+  -webkit-border-top-right-radius:2px;
+  -moz-border-radius-topright:2px;
+  border-top-right-radius:2px;
+  -webkit-border-bottom-right-radius:2px;
+  -moz-border-radius-bottomright:2px;
+  border-bottom-right-radius:2px;
+  -webkit-border-bottom-left-radius:2px;
+  -moz-border-radius-bottomleft:2px;
+  border-bottom-left-radius:2px;
+  text-indent:0px;
+  display:inline-block;
+  color:@darkGrey;
+  font-family:@headerFont;
+  font-size:20px;
+  text-transform: uppercase;
+  height:50px;
+  line-height:55px;
+  width:200px;
+  text-decoration:none;
+  text-align:center;}
+
+// corners
+.corner {
+  -webkit-border-top-left-radius:2px;
+  -moz-border-radius-topleft:2px;
+  border-top-left-radius:2px;
+  -webkit-border-top-right-radius:2px;
+  -moz-border-radius-topright:2px;
+  border-top-right-radius:2px;
+  -webkit-border-bottom-right-radius:2px;
+  -moz-border-radius-bottomright:2px;
+  border-bottom-right-radius:2px;
+  -webkit-border-bottom-left-radius:2px;
+  -moz-border-radius-bottomleft:2px;
+  border-bottom-left-radius:2px;
+}
+
+// color swatch squares
+.sq1, .sq2, .sq3, .sq4 {.square}
+.sq1 {background-color: @offWhite;}
+.sq2 {background-color: @highlight;}
+.sq3 {background-color: @darkGrey;}
+.sq4 {background-color: @lightGrey;}
+
+h1, h2, h3, h4, h5, h6{
+  font-family:@headerFont;
+}
+
+body{
+  background-color:@darkGrey;
+  color:@offWhite;
+  font-family:@bodyFont;
+}
+
+a {
+  text-decoration: none;
+  color: @offWhite;
+}
+
+ul {
+  list-style-type: square;
+  color: @highlight;
+}
+
+.title {
+  padding-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.title > img {width: 15%;height: auto;}
+
+#button-row {
+  align: center;
+  background-color:none;
+  width: 80%;
+  margin-left: 20%;
+  overflow: auto;
+}
+#button-col {float: left; width: 30%; }
+#input-col {float: left; width: 25%; }
+#share-col {float: right; width: 35%;}
+
+.btn-inactive {
+   .inactivebutton; 
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn-active, {
+  margin-bottom: 1em;
+  .activebutton
+}
+
+input.text {
+  background: @darkGrey;
+  display: block;
+  border: 2px solid  rgba(235, 235, 235, 1);
+  box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.15);
+  padding: 8px;
+  position: relative;
+  font-size: 13px;
+  margin: 50px auto;
+  width: 200px;
+  font-family: @bodyFont;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; /* future proofing */
+  -khtml-border-radius: 10px; /* for old Konqueror     browsers */
+}
+    
+input.text:focus {
+  outline: none;
+  border-color: @offWhite;  
+  color: @offWhite;
+}
+/* end of input box*/
+
+// share column
+#sharesettings {
+  background-color: none;
+}
+
+
+#sharebutton {
+  .inactivebutton
+}
+
+#sharebutton:active {
+ .activebutton
+}
+.share-label {
+  color: @offWhite;
+}
+
+#dropdown-row {
+  background-color:none;
+  width: 80%;
+  height: auto;
+  margin-left: 20%;
+  overflow: auto;
+}
+#dropdown-col{ float: left; width: 30%; }
+#tags-col{ float: left; width: 25%; }
+#select-col{ float: right; width: 33%; }
+
+
+#dropdownbutton, .navbar-toggle, { /*Dropdown button settings*/
+  -moz-box-shadow: 2px 2px 1px 1px #292929;
+  -webkit-box-shadow: 2px 2px 1px 1px #292929;
+  box-shadow: 2px 2px 1px 1px #292929;
+  background-color:transparent;
+  -webkit-border-top-left-radius:2px;
+  -moz-border-radius-topleft:2px;
+  border-top-left-radius:2px;
+  -webkit-border-top-right-radius:2px;
+  -moz-border-radius-topright:2px;
+  border-top-right-radius:2px;
+  -webkit-border-bottom-right-radius:2px;
+  -moz-border-radius-bottomright:2px;
+  border-bottom-right-radius:2px;
+  -webkit-border-bottom-left-radius:2px;
+  -moz-border-radius-bottomleft:2px;
+  border-bottom-left-radius:2px;
+  text-indent:0px;
+  border:2px solid @offWhite;
+  display:inline-block;
+  color:@offWhite;
+  font-family:@headerFont;
+  font-size:20px;
+  height:50px;
+  line-height:30px;
+  width:200px;
+  text-transform: uppercase;
+  text-decoration:none;
+  text-align:center;
+  margin-bottom: 4px;
+  outline: none;
+}
+#dropdownbutton:active, .navbar-toggle:active { /*Dropdown settings when pressed*/
+  border: none;
+  color: @darkGrey;
+  padding:12px;
+  background-color:@highlight;
+  box-shadow:inset 2px 2px 1px 1px #292929;
+  font-family: @headerFont;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 200px;
+  outline: none;
+}
+
+ /**********tags input**********/
+.tagsinput-primary{
+  background-color:@darkGrey;
+  color: @offWhite;
+  border: 2px solid @offWhite;
+  width: 300px;
+  height: 33px;
+  .corner
+}
+
+input[name="tagsinput"]{
+  background-color: @offWhite;
+  color: @darkGrey;
+  font-family: @headerFont;
+  font-size: 15px;
+  border: none;
+  width: 80px;
+  text-align:center;
+  float: left;
+  margin: 4px 5px 5px 9px;
+  .corner
+}
+
+input[name="tagsinput"]:hover{
+  background-color: @highlight;
+  color: @darkGrey;
+  font-family: @headerFont;
+  font-size: 15px;
+  border: none;
+  width: 80px;
+  text-align:center;
+}
+
+
+
+/**********select**********/
+.select, .form-control, .select-primary {
+  .inactivebutton;
+  background-color: @darkGrey;
+}
+
+.select2-choice{
+  font-family: @bodyFont;
+  background-color:@lightGrey;
+  color:@darkGrey;
+  font-family: @headerFont;
+  font-size: 15px;
+  text-transform: lowercase;
+  letter-spacing: .5px;
+}
+
+
+.select-default .select2-choice:active {
+  background-color:@highlight;
+  color: @darkGrey;
+  border-color: none;
+  font-family: @headerFont;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  }
+
+
+#nav-row {
+ background-color:none;
+  width: 80%;
+  margin-left: 20%;
+  overflow: auto;
+}
+
+// search bar inside toggle nav button
+// added this id for search bar
+#navbarInput-01{
+  text-align: left;
+  text-transform: none;
+  padding-left: 10px;
+  //height: 60px;
+  border: 2px solid  rgba(235, 235, 235, 1);
+  box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.15);
+  font-size: 13px;
+  margin: 10px auto;
+  width: 200px;
+  font-family: @bodyFont;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; /* future proofing */
+  -khtml-border-radius: 10px; /* for old Konqueror     browsers */
+}
+
+// style for input inside search bar inside toggle nav bar
+// added this id for search bar
+#navbarInput-01:focus {
+  outline: none;
+  border-color: @offWhite;  
+  color: @offWhite;
+}
+
+// removes orginal cancel 'x' for search bar inside toggle nav button
+#navbarInput-01::-webkit-search-cancel-button{
+   -webkit-appearance: none;
+}
+
+// 'x' cancel for search bar inside toggle nav
+#navbarInput-01::-webkit-search-cancel-button:after { 
+  content: 'x';
+  color: @darkGrey;
+  width: 20px;
+  height: 20px;
+}
+
+// changes search bar enter button to yellow square
+#submitbutton{
+  padding-bottom: 5px;
+  height: 20px;
+  width: 20px;
+  border: none;
+  box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.15);
+  background-color: @highlight;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; /* future proofing */
+  -khtml-border-radius: 10px; /* for old Konqueror     browsers */
+}
+
+
+.pagination {
+    background: none;
+    padding: 20px;
+    margin-bottom: 20px;
+   
+}
+
+
+.page > a {
+  color: @darkGrey;
+  font-weight: bold;
+}
+.page {
+    display: inline-block;
+    padding: 20px 80px;
+    margin-right: 0px;
+    border-radius: 1px;
+    background: @lightGrey;
+    box-shadow: inset 1px 1px 1px     rgba(255,255,255, .8), 0px 1px 3px rgba(0,0,0, .1);
+    font-size: 19px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px rgba(255,255,255, 1);
+    font-family: @headerFont;
+    .corner
+}
+
+.page:hover, .page.gradient:hover {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(@highlight), to(@highlight));
+}
+
+#activepage {
+  -moz-box-shadow:inset 2px 2px 1px 1px #292929;
+  -webkit-box-shadow:inset 2px 2px 1px 1px #292929;
+  box-shadow:inset 2px 2px 1px 1px #292929;
+  background-color:@highlight;
+  -webkit-border-top-left-radius:2px;
+  -moz-border-radius-topleft:2px;
+  border-top-left-radius:2px;
+  -webkit-border-top-right-radius:2px;
+  -moz-border-radius-topright:2px;
+  border-top-right-radius:2px;
+  -webkit-border-bottom-right-radius:2px;
+  -moz-border-radius-bottomright:2px;
+  border-bottom-right-radius:2px;
+  -webkit-border-bottom-left-radius:2px;
+  -moz-border-radius-bottomleft:2px;
+  border-bottom-left-radius:2px;
+  text-indent:0px;
+  display:inline-block;
+  font-family:@headerFont;
+  font-size:20px;
+  text-transform: uppercase;
+  height:30px;
+  width:40px;
+  text-decoration:none;
+  text-align:center;
+  margin-bottom:30px;
+}
+
+
+
+#progress-row {
+ background-color:none;
+  width: 80%;
+  margin-left: 20%;
+  overflow: auto;
+}
+
+#progress-bar {
+  width: 65%;
+  margin-left: 20%;
+  overflow: auto;
+  border-radius: 2px;
+  background-color: @offWhite;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .25) inset;
+}
+
+progress::-webkit-progress-bar {
+  background: @offWhite;
+  box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Now the value part */
+progress::-webkit-progress-value {
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+  background:
+    -webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 66%, transparent 66%),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0)),
+    -webkit-linear-gradient(left, @lightGrey, @lightGrey);
+}
+
+
+
+
+
+#checkboxes-row {
+  background-color:none;
+  width: 80%;
+  margin-left: 20%;
+  overflow: auto;
+}
+#checkboxes-col{ float: left; width: 30%; }
+#radio-col{ float: left; width: 30%; }
+#switches-col{ float: left; width: 30%; }
+
+
+/**********checkbox styles**********/
+input[type="checkbox"]{
+ -webkit-appearance:none;/* Hides the default checkbox style */ 
+ height:1.8em;/*height of checkbox*/
+ width:1.8em;/*width of checkbox*/
+ cursor:pointer;
+ position:relative;
+ line-height:1.6em;/*placement of checkmark within box*/
+ background-color:@offWhite;/*color of unchecked box*/
+ vertical-align:top;/*alignment of checkbox to text*/
+}
+input[type="checkbox"]:checked {
+ background-color:@highlight;/*color of active state checkbox*/
+}
+input[type="checkbox"]:checked:after {
+ content: '✓';/*checkmark*/
+ line-height:.86em;/*placement of checkmark within box*/
+ font-size:1.5rem;/*checkmark size*/
+ padding-left:10%;
+}
+
+
+
+/**********radio styles**********/
+input[type="radio"]{
+ -webkit-appearance:none;/* Hides the default checkbox style */ 
+ height:1.8em;
+ width:1.8em;
+ cursor:pointer;
+ position:relative;
+ background-color:@offWhite;/*unactive state color - center of button*/
+ vertical-align:middle;/*alignment of radio button to text*/
+ border-radius: 50%;/*set circle in unactive state*/
+ width: 1.2rem;/*set circle width in unactive state*/
+ height: 1.2rem;/*set circle height in unactive state*/
+ border: .13rem solid @offWhite;/*outter circle*/
+ box-shadow: inset 0px 0px 0px 2px @darkGrey;/*sets grey circle within active button*/
+}
+input[type="radio"]:checked {
+ background-color:@highlight;/*active state color - center of button*/
+ border-radius: 50%;/*set circle in active state*/
+ width: 1.2rem;/*set circle width in active state*/
+ height: 1.2rem;/*set circle height in active state*/
+ border: .13rem solid @highlight;/*outter circle*/
+ box-shadow: inset 0px 0px 0px 2px @darkGrey;/*sets grey circle within active button*/
+}
+
+
+/**********switch styles & transitions**********/
+.ui-flipswitch {
+ font-family:@headerFont;
+ color:@darkGrey;/*color of ON/OFF text*/
+ background-color:@lightGrey; /*background color for both sides/all of switch*/
+  display: inline-block;
+  vertical-align: middle;
+  width: 5em; /* width of OFF state switch*/
+  height: 1.875em;/*height of switches*/
+  margin: .4em 0;/*spacing around buttons -bottom, left*/
+  overflow: hidden;
+  border-radius:2px;/*curve the edges of all buttons slightly*/
+  /*below are the switch transitions*/
+  -webkit-transition-property: padding, width, background-color, color;
+  -moz-transition-property: padding, width, background-color, color;
+  -o-transition-property: padding, width, background-color, color;
+  transition-property: padding, width, background-color, color;
+  -webkit-transition-duration: 100ms;
+  -moz-transition-duration: 100ms;
+  -o-transition-duration: 100ms;
+  transition-duration: 100ms;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.ui-flipswitch.ui-flipswitch-active {
+  padding-left: 3em;  /*keeps width of ON state same as OFF state */
+  width: 2em;/*width of ON state background color*/
+  background-color:@highlight;/*background color of ON state*/
+}
+.ui-flipswitch-input {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(1px,1px,1px,1px);
+  outline: 0;
+  filter: Alpha(Opacity=0);
+  opacity: 0;
+}
+.ui-flipswitch .ui-btn.ui-flipswitch-on,
+.ui-flipswitch .ui-flipswitch-off {
+  float: left;
+  height: 1.875em;/*bottom of button length*/
+  line-height: 1.85em;/*text height on switches*/
+}
+.ui-flipswitch .ui-btn.ui-flipswitch-on /*ON button state styles*/{
+  width: 2em;/*width of button in both states*/
+  text-indent: -2.15em; /* center ON text on background color */
+  text-align: left;
+  overflow: visible;
+  color: inherit;
+  text-shadow: inherit;
+  background-color:@offWhite;/*color of button in ON state, fits right*/
+}
+.ui-flipswitch .ui-flipswitch-off /*OFF button state styles*/{
+  color:@offWhite;
+  background-color:@lightGrey;/*color of OFF space (covers button overflow color)*/
+  padding: 1px;
+  text-indent: .7em; /*center OFF text on background color */ 
+}
+.ui-flipswitch-active.ui-state-disabled /*ON Disabled button state styles*/{
+  background-color:@lightGrey;/*color of ON space (covers button overflow color)*/
+}
+.ui-flipswitch-disabled/*ON Disabled button state styles*/{
+  color:@darkGrey;
+  background-color:@darkGrey;/*color of ON space (covers button overflow color)*/
+}
+/* Override field container CSS to prevent the flipswitch from becomming full width */
+html .ui-field-contain > label + .ui-flipswitch,
+html .ui-popup .ui-field-contain > label + .ui-flipswitch {
+  display: inline-block;
+  width: 5em; /* If you override the width for .ui-flipswitch you should repeat the same value here */
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.ui-field-contain .ui-flipswitch.ui-flipswitch-active,
+.ui-popup .ui-field-contain .ui-flipswitch.ui-flipswitch-active {
+  width: 1.875em;
+}
+
+#image-row {
+  margin-left: 20%;
+  background-color: none;
+  overflow: auto;
+}
+#image-col{ float: left; width: 40%; }
+#color-col{ float: right; width: 55%; }
+
+.image-section > img {
+  width: 350px;
+  height : auto;
+}
+
+#typo-row {
+  background-color:none;
+  width: 80%;
+  margin-left: 20%;
+  overflow: auto;
+}
+
+.demo-heading-note{
+  background-color:none;
+  width: 20px;
+}
+
+.demo-type-example > p {
+  background-color:none;
+  width: 80%;
+}

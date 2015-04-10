@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UTD - Davidow Collection</title>
+    <meta name="description" content="UI Kit for The Joan Davidow Collection at The University of Texas at Dallas." />
+
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="stylesBlue.css">
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!--link to jquery for switches-->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!--link to jquery for switches-->
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="dist/js/vendor/html5shiv.js"></script>
+      <script src="dist/js/vendor/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+
+    <!-- logo and title -->
+    <div class="title">
+        <img src="http://www.utdallas.edu/davidow/img/UT_Dallas_tex_black.png" alt="example-image" class="img-rounded img-responsive">
+        <h1 class="demo-section-title">UI Kit - Davidow Collection</h1>
+    </div>
+    <!-- end of logo and title -->
+
+
+
+
+    <!-- button row -->
+    <div class="row" id="button-row">
+
+        <!-- button col -->
+        <div class="row demo-row" id="button-col">
+            <h3 class="demo-panel-title">Buttons</h3>
+            <div class="col-xs-3">
+                <a href="#fakelink" class="btn btn-block btn-lg btn-active">Active Button</a>
+            </div>
+            <div class="col-xs-3">
+                <a href="#fakelink" class="btn btn-block btn-lg btn-inactive">Inactive Button</a>
+            </div>
+        </div>
+        <!-- end of button col -->
+
+        <!-- input col -->
+        <div class="col-xs-3" id="input-col">
+            <h3 class="demo-panel-title">Input</h3>
+            <input type="text" class="text" placeholder="Sample Input" />
+        </div>
+        <!-- end of input col -->
+
+        <!-- share col -->
+        <div class="col-xs-3" id="share-col">
+            <h3 class="demo-panel-title">Share</h3>
+            <div class="share mrl" id="sharesettings">
+                <ul>
+                    <li>
+                        <label class="share-label" for="share-toggle2">Facebook
+                            <input type="checkbox" data-toggle="switch" />
+                        </label>
+                    </li>
+                    <li>
+                        <label class="share-label" for="share-toggle4" id="sharelabel">Twitter
+                            <input type="checkbox" checked="" data-toggle="switch" id="shareinput" />
+                        </label>
+                    </li>
+                    <li>
+                        <label class="share-label" for="share-toggle6">Pinterest
+                            <input type="checkbox" data-toggle="switch" />
+                        </label>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-primary btn-block btn-large" id="sharebutton">Share</a>
+            </div>
+        </div>
+        <!-- end of share col -->
+    </div>
+    <!-- end of button row -->
+    <BR>
+    <BR>
+
+
+    <!-- dropdown row -->
+    <div class="row" id="dropdown-row">
+
+        <!-- dropdown col -->
+        <div class="col-xs-3" id="dropdown-col">
+            <h3 class="demo-panel-title">Dropdown</h3>
+            <div class="btn-group">
+                <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button" id="dropdownbutton">Default<span class="caret"></span></button>
+                <ul role="menu" class="dropdown-menu">
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Map</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Tutorial</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end of dropdown col -->
+
+        <!-- select col -->
+        <div class="col-xs-3" id="select-col">
+            <h3 class="demo-panel-title">Select</h3>
+            <select class="form-control select select-primary" data-toggle="select" data-role="none">
+                <option value="0">Choose hero</option>>
+                <option value="1">Spider Man</option>
+                <option value="2">Wolverine</option>
+                <option value="3">Captain America</option>
+                <option value="4" selected>X-Men</option>
+                <option value="5">Crocodile</option>
+            </select>
+        </div>
+        <!-- end of select col -->
+
+        <!-- tags col -->
+        <div class="col-xs-6" id="tags-col">
+            <h3 class="demo-panel-title">Tags</h3>
+            <div class="tagsinput-primary">
+                <input name="tagsinput" class="tagsinput" data-role="tagsinput" value="School" />
+                <input name="tagsinput" class="tagsinput" data-role="tagsinput" value="Teacher" />
+                <input name="tagsinput" class="tagsinput" data-role="tagsinput" value="Colleague" />
+            </div>
+        </div>
+        <!-- end of tags col -->
+
+    </div>
+    <!-- end of dropdown row -->
+    <BR>
+
+    <!-- navbar row-->
+    <div class="row" id="nav-row">
+        <!-- navigation bar toggle -->
+        <h3 class="demo-panel-title">Navbar</h3>
+        <div class="row demo-row">
+            <div class="col-xs-12">
+                <nav class="navbar navbar-inverse navbar-embossed" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+                            <span class="sr-only">Toggle navigation</span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbar-collapse-01">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li><a href="#fakelink">Explore</span></a></li>
+                            <li><a href="#fakelink">Map</span></a></li>
+                            <li><a href="#fakelink">Gallery</a></li>
+                        </ul>
+
+                        <form class="navbar-form navbar-right" action="#" role="search">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input class="form-control" id="navbarInput-01" type="search" placeholder="Search" data-role="none">
+                                    <span class="input-group-btn">
+                                <button type="submit" class="btn" id="submitbutton"><span class="fui-search"></span></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+        <!-- navigation bar toggle -->
+
+        <!-- floor map navigation -->
+        <div class="col-xs-6 col-xs-offset-1">
+            <h3 class="demo-panel-title">Floor Map Navigation</h3>
+            <div class="pagination">
+                <ul>
+                    <li class="page" id="activepage"><a href="#fakelink">F1</a></li>
+                    <li class="page"><a href="#fakelink">F2</a></li>
+                    <li class="page"><a href="#fakelink">F3</a></li>
+                    <li class="page"><a href="#fakelink">F4</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end of floor map navigation -->
+
+    </div>
+    <!-- end of navbar row-->
+
+
+    <!-- progress bar row-->
+    <div class="row">
+        <div class="col-xs-5">
+            <h3 class="demo-panel-title" id="progress-row">Progress Bar</h3>
+            <div class="progress">
+                <progress max="100" value="60" id="progress-bar"></progress>
+                <div class="progress-bar" style="width: 45%;"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end of progress bar row-->
+    <BR>
+
+    <!-- /sliders -->
+    <div class="row" id="checkboxes-row">
+        <div class="col-xs-3" id="checkboxes-col">
+            <h3 class="demo-panel-title">Checkboxes</h3>
+            <label class="checkbox" for="checkbox1">
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox"> Unchecked
+            </label>
+            <label class="checkbox" for="checkbox2">
+                <input type="checkbox" checked="checked" value="" id="checkbox2" data-toggle="checkbox" checked=""> Checked
+            </label>
+            <label class="checkbox" for="checkbox3">
+                <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox" disabled=""> Disabled unchecked
+            </label>
+            <label class="checkbox" for="checkbox4">
+                <input type="checkbox" checked="checked" value="" id="checkbox4" data-toggle="checkbox" disabled="" checked=""> Disabled checked
+            </label>
+        </div>
+
+        <div class="col-xs-3" id="radio-col">
+            <h3 class="demo-panel-title">Radio Buttons</h3>
+            <label class="radio">
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio"> Radio is off
+            </label>
+            <label class="radio">
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio" checked=""> Radio is on
+            </label>
+
+            <label class="radio">
+                <input type="radio" name="optionsRadiosDisabled" id="optionsRadios3" value="option2" data-toggle="radio" disabled=""> Disabled radio is off
+            </label>
+            <label class="radio">
+                <input type="radio" name="optionsRadiosDisabled" id="optionsRadios4" value="option2" data-toggle="radio" checked="" disabled=""> Disabled radio is on
+            </label>
+        </div>
+
+
+        <div class="col-xs-3" id="switches-col">
+            <h3 class="demo-panel-title">Switches</h3>
+
+            <table width="100%">
+                <tr>
+                    <td width="50%" class="pbm">
+                        <input type="checkbox" checked data-toggle="switch" id="custom-switch-01" data-on-text="ON" data-off-text="OFF" data-role="flipswitch" />
+                    </td>
+                    <td class="pbm">
+                        <input type="checkbox" data-toggle="switch" id="custom-switch-02" data-on-text="ON" data-off-text="OFF" data-role="flipswitch" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pbm">
+                        <div class="bootstrap-switch-square">
+                            <input type="checkbox" checked data-toggle="switch" id="custom-switch-03" data-on-text="ON" data-off-text="OFF" data-role="flipswitch" />
+                        </div>
+                    </td>
+                    <td class="pbm">
+                        <div class="bootstrap-switch-square">
+                            <input type="checkbox" data-toggle="switch" id="custom-switch-04" data-on-text="ON" data-off-text="OFF" data-role="flipswitch" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" checked disabled data-toggle="switch" id="custom-switch-5" data-role="flipswitch" />
+                    </td>
+                    <td>
+                        <input type="checkbox" checked disabled data-toggle="switch" id="custom-switch-6" data-role="flipswitch" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+    <!-- image row -->
+    <div class="row" id="image-row">
+        <div class="col-xs-3" id="image-col">
+            <h3 class="demo-panel-title">Image</h3>
+            <div class="image-section">
+                <img src="http://atec.io/cdn/wp-content/uploads/2014/08/image69-728x1024.jpg" alt="example-image" class="img-rounded img-responsive">
+            </div>
+        </div>
+
+        <div class="col-xs-3" id="color-col">
+            <h3 class="demo-panel-title">Color Swatches</h3>
+            <div class="color-swatches">
+                <div class="sq1">#EBEBEB</div>
+                <div class="sq2">#EACA5D</div>
+                <BR>
+                <div class="sq3">#999BA1</div>
+                <div class="sq4">#3B3C3E</div>
+            </div>
+        </div>
+    </div>
+    <!-- end of image row -->
+
+
+    <!-- typo row -->
+    <div class="demo-row typography-row" id="typo-row">
+        <div class="demo-title">
+            <h3 class="demo-panel-title">Typography</h3>
+        </div>
+
+        <div class="demo-content">
+            <div class="demo-type-example">
+                <h1><span class="demo-heading-note">Header 1</span> - Oswald Regular is used for headings</h1>
+            </div>
+            <div class="demo-type-example">
+                <h2><span class="demo-heading-note">Header 2</span> - Untitled - Schwarz, Ludwig 1996 acrylic on canvas</h2>
+            </div>
+            <div class="demo-type-example">
+                <h3><span class="demo-heading-note">Header 3</span> - Unititled - Bodnar, Peter 2001 lithograph</h3>
+            </div>
+            <div class="demo-type-example">
+                <h4><span class="demo-heading-note">Header 4</span> - Untitled - Dawe, Gabriel  cuff, pins in plexi cube</h4>
+            </div>
+            <div class="demo-type-example">
+                <h5><span class="demo-heading-note">Header 5</span> - No One Would Believe She was Innocent</h5>
+            </div>
+            <div class="demo-type-example">
+                <h6><span class="demo-heading-note">Header 6</span> - Letting You Go</h6>
+            </div>
+
+            <div class="demo-type-example">
+                <span class="demo-text-note">Paragraph</span>
+                <p>Open Sans Regular will be used for paragraphs. Open Sans Regular will be used for paragraphs. Open Sans Regular will be used for paragraphs. Open Sans Regular will be used for paragraphs. Open Sans Regular will be used for paragraphs. Open Sans Regular will be used for paragraphs.
+                    <strong>Open Sans is a free Google font</strong></p>
+            </div>
+        </div>
+        <!-- /.demo-content-wide -->
+    </div>
+    <!-- end of typo row -->
+
+    <footer></footer>
+
+
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            //hide dropdown menu
+            $(".dropdown-menu").hide();
+
+            //toggle dropdown menu
+            $("#dropdownbutton").click(function() {
+                $(".dropdown-menu").toggle();
+            });
+
+
+            // hides nav items
+            $("#navbar-collapse-01").hide();
+
+            // once nav toggle button is clicked, items will toggle on/off
+            $(".navbar-toggle").click(function() {
+                $("#navbar-collapse-01").toggle();
+            });
+
+            // hides loading that appears bc of jquery 
+            $('h1:contains("loading")').html('');
+
+        });
+    </script>
+
+
+</body>
+
+</html>

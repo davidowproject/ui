@@ -676,7 +676,6 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
     border: 3px solid @highlightB;
     border-radius: 3px;
     -webkit-border-radius: 3px;
-    height: 0;
     left: 30px;/*keep at 30 so circle stays in place*/
     position: absolute;
     top: 28px;/*circle opens on itself*/
@@ -686,11 +685,11 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
     -webkit-animation-iteration-count: infinite;
 }
 @-webkit-keyframes beacon {
-    0%        {
+    from{
         border-radius: 5px;
         -webkit-border-radius: 3px;
     }
-    100%    {
+    to{
         border-radius: 25px;
         -webkit-border-radius: 25px;
         left: 9px;

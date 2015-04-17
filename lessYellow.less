@@ -668,7 +668,36 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 .ui-popup .ui-field-contain .ui-flipswitch.ui-flipswitch-active {
   width: 1.875em;
 }
-
+/**********beacon styles & transitions**********/
+.beacon {
+    position: relative;
+}
+.beacon .marker {
+    border: 3px solid @highlightB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    height: 0;
+    left: 30px;/*keep at 30 so circle stays in place*/
+    position: absolute;
+    top: 28px;/*circle opens on itself*/
+    -webkit-animation-name: beacon;
+    -webkit-animation-delay: .1s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes beacon {
+    0%        {
+        border-radius: 5px;
+        -webkit-border-radius: 3px;
+    }
+    100%    {
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        left: 9px;
+        padding: 21px;
+        top: 7px;
+    }
+}
 #image-row {
   margin-left: 20%;
   background-color: none;

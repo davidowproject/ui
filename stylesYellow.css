@@ -770,6 +770,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
   position: relative;
 }
 .beacon .marker {
+  color: #eaca5d;
   border: 3px solid ;
   border-radius: 3px;
   -webkit-border-radius: 3px;

@@ -224,7 +224,7 @@ ul {
 input.text {
   background: #ebebeb;
   display: block;
-  border: 2px solid #3b3c3e;
+  border: 2px solid #ebebeb;
   box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.15);
   padding: 8px;
   position: relative;
@@ -770,6 +770,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
   position: relative;
 }
 .beacon .marker {
+  color: #4fc5e7;
   border: 3px solid ;
   border-radius: 3px;
   -webkit-border-radius: 3px;

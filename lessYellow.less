@@ -4,12 +4,13 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald); /*import oswald font family*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans); /*import open sans font family*/
 
-@darkGrey:#3b3c3e; /*dark theme background color*/
-@offWhite:#ebebeb; /*dark theme text color*/
+@darkGrey:#ebebeb; /*dark theme background color*/
+@offWhite:#3b3c3e; /*dark theme text color*/
 @lightGrey: #999ba1; /*dark theme button indention*/
-@highlight: #eaca5d; /*highlight color*/
+@highlight: #4fc5e7; /*highlight color*/
 /*@highlightB: #4fc5e7;
-  @highlightY: #eaca5d*/
+  @highlightY: #eaca5d
+  dark grey 3b3c3e*/
 @headerFont:'Oswald', sans-serif; /*font type used for headers*/
 @bodyFont:'Open Sans', sans-serif; /*font type used for all other text*/
 
@@ -673,6 +674,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
     position: relative;
 }
 .beacon .marker {
+    color: @highlight;
     border: 3px solid @highlightB;
     border-radius: 3px;
     -webkit-border-radius: 3px;

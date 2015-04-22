@@ -4,10 +4,10 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald); /*import oswald font family*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans); /*import open sans font family*/
 
-@darkGrey:#ebebeb; /*dark theme background color*/
-@offWhite:#3b3c3e; /*dark theme text color*/
+@darkGrey:#3b3c3e; /*dark theme background color*/
+@offWhite:#ebebeb; /*dark theme text color*/
 @lightGrey: #999ba1; /*dark theme button indention*/
-@highlight: #4fc5e7; /*highlight color*/
+@highlight: #eaca5d; /*highlight color*/
 /*@highlightB: #4fc5e7;
   @highlightY: #eaca5d
   dark grey 3b3c3e*/
@@ -439,7 +439,7 @@ input[name="tagsinput"]:hover{
 
 
 .page > a {
-  color: @darkGrey;
+  color: #3b3c3e;
   font-weight: bold;
 }
 .page {
@@ -674,12 +674,12 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
     position: relative;
 }
 .beacon .marker {
-    border: 40px solid @highlightB;
-    border-radius: 40px;
-    -webkit-border-radius: 40px;
+    border: 15px solid @highlight;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
     left: 150px;/*keep at 30 so circle stays in place*/
     position: absolute;
-    top: 100px;/*circle opens on itself*/
+    //top: 10px;/*circle opens on itself*/
     -webkit-animation: pulsate 3s ease-out;
     -webkit-animation-iteration-count: infinite;
   opacity:0;

@@ -674,31 +674,24 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
     position: relative;
 }
 .beacon .marker {
-    color: @highlight;
-    border: 3px solid @highlightB;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    left: 30px;/*keep at 30 so circle stays in place*/
+    border: 40px solid @highlightB;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    left: 150px;/*keep at 30 so circle stays in place*/
     position: absolute;
-    top: 28px;/*circle opens on itself*/
-    -webkit-animation-name: beacon;
-    -webkit-animation-delay: .1s;
-    -webkit-animation-duration: 1s;
+    top: 100px;/*circle opens on itself*/
+    -webkit-animation: pulsate 3s ease-out;
     -webkit-animation-iteration-count: infinite;
+  opacity:0;
 }
-@-webkit-keyframes beacon {
-    from{
-        border-radius: 5px;
-        -webkit-border-radius: 3px;
-    }
-    to{
-        border-radius: 25px;
-        -webkit-border-radius: 25px;
-        left: 9px;
-        padding: 21px;
-        top: 7px;
-    }
-}
+
+#beacon2{-webkit-animation-delay:.6s}
+#beacon3{-webkit-animation-delay:1.2s}
+#beacon4{-webkit-animation-delay:1.8s}
+#beacon5{-webkit-animation-delay:2.4s}
+
+@-webkit-keyframes pulsate{0{-webkit-transform:scale(0.1,0.1);opacity:.0}50%{opacity:.4}100%{-webkit-transform:scale(4,4);opacity:.0}}
+
 #image-row {
   margin-left: 20%;
   background-color: none;

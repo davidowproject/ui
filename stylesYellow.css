@@ -1,5 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/* This is based on the Flat UI HTML at http://designmodo.github.io/Flat-UI/ and BootStrap HTML */
+/*development fork*/
+/*import oswald font family*/
+/*import open sans font family*/
+/*dark theme background color*/
+/*dark theme text color*/
+/*dark theme button indention*/
+/*highlight color*/
+/*@highlightB: #4fc5e7;
+  @highlightY: #eaca5d
+  dark grey 3b3c3e*/
+/*font type used for headers*/
+/*font type used for all other text*/
 .square {
   text-align: center;
   width: 200px;
@@ -40,6 +53,7 @@
   text-align: center;
 }
 .activebutton {
+  border: none;
   -moz-box-shadow: inset 2px 2px 1px 1px #292929;
   -webkit-box-shadow: inset 2px 2px 1px 1px #292929;
   box-shadow: inset 2px 2px 1px 1px #292929;
@@ -67,7 +81,6 @@
   width: 200px;
   text-decoration: none;
   text-align: center;
-  border: none;
 }
 .corner {
   -webkit-border-top-left-radius: 2px;
@@ -192,6 +205,7 @@ ul {
 }
 .btn-active {
   margin-bottom: 1em;
+  border: none;
   -moz-box-shadow: inset 2px 2px 1px 1px #292929;
   -webkit-box-shadow: inset 2px 2px 1px 1px #292929;
   box-shadow: inset 2px 2px 1px 1px #292929;
@@ -219,13 +233,12 @@ ul {
   width: 200px;
   text-decoration: none;
   text-align: center;
-  border: none;
 }
 input.text {
   background: #3b3c3e;
   display: block;
   border: 2px solid #ebebeb;
-  box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.15);
+  box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.15);
   padding: 8px;
   position: relative;
   font-size: 13px;
@@ -240,13 +253,16 @@ input.text {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
+  /* future proofing */
   -khtml-border-radius: 10px;
+  /* for old Konqueror     browsers */
 }
 input.text:focus {
   outline: none;
   border-color: #ebebeb;
   color: #ebebeb;
 }
+/* end of input box*/
 #sharesettings {
   background-color: none;
 }
@@ -281,6 +297,7 @@ input.text:focus {
   text-align: center;
 }
 #sharebutton:active {
+  border: none;
   -moz-box-shadow: inset 2px 2px 1px 1px #292929;
   -webkit-box-shadow: inset 2px 2px 1px 1px #292929;
   box-shadow: inset 2px 2px 1px 1px #292929;
@@ -308,7 +325,6 @@ input.text:focus {
   width: 200px;
   text-decoration: none;
   text-align: center;
-  border: none;
 }
 .share-label {
   color: #ebebeb;
@@ -334,6 +350,7 @@ input.text:focus {
 }
 #dropdownbutton,
 .navbar-toggle {
+  /*Dropdown button settings*/
   -moz-box-shadow: 2px 2px 1px 1px #292929;
   -webkit-box-shadow: 2px 2px 1px 1px #292929;
   box-shadow: 2px 2px 1px 1px #292929;
@@ -367,6 +384,7 @@ input.text:focus {
 }
 #dropdownbutton:active,
 .navbar-toggle:active {
+  /*Dropdown settings when pressed*/
   border: none;
   color: #3b3c3e;
   padding: 12px;
@@ -379,6 +397,7 @@ input.text:focus {
   width: 200px;
   outline: none;
 }
+/**********tags input**********/
 .tagsinput-primary {
   background-color: #3b3c3e;
   color: #ebebeb;
@@ -430,6 +449,7 @@ input[name="tagsinput"]:hover {
   width: 80px;
   text-align: center;
 }
+/**********select**********/
 .select,
 .form-control,
 .select-primary {
@@ -492,7 +512,7 @@ input[name="tagsinput"]:hover {
   text-transform: none;
   padding-left: 10px;
   border: 2px solid #ebebeb;
-  box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.15);
+  box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.15);
   font-size: 13px;
   margin: 10px auto;
   width: 200px;
@@ -505,7 +525,9 @@ input[name="tagsinput"]:hover {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
+  /* future proofing */
   -khtml-border-radius: 10px;
+  /* for old Konqueror     browsers */
 }
 #navbarInput-01:focus {
   outline: none;
@@ -526,7 +548,7 @@ input[name="tagsinput"]:hover {
   height: 20px;
   width: 20px;
   border: none;
-  box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.15);
+  box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.15);
   background-color: #eaca5d;
   -webkit-transition: all .2s ease;
   -moz-transition: all .2s ease;
@@ -536,7 +558,9 @@ input[name="tagsinput"]:hover {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
+  /* future proofing */
   -khtml-border-radius: 10px;
+  /* for old Konqueror     browsers */
 }
 .pagination {
   background: none;
@@ -553,7 +577,7 @@ input[name="tagsinput"]:hover {
   margin-right: 0px;
   border-radius: 1px;
   background: #999ba1;
-  box-shadow: inset 1px 1px 1px rgba(255,255,255,0.8), 0px 1px 3px rgba(0,0,0,0.1);
+  box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.8), 0px 1px 3px rgba(0, 0, 0, 0.1);
   font-size: 19px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffffff;
@@ -573,7 +597,7 @@ input[name="tagsinput"]:hover {
 }
 .page:hover,
 .page.gradient:hover {
-  background: -webkit-gradient(linear,0% 0%,0% 100%,from(#eaca5d),to(#eaca5d));
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eaca5d), to(#eaca5d));
 }
 #activepage {
   -moz-box-shadow: inset 2px 2px 1px 1px #292929;
@@ -615,15 +639,16 @@ input[name="tagsinput"]:hover {
   overflow: auto;
   border-radius: 2px;
   background-color: #ebebeb;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.25) inset;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 progress::-webkit-progress-bar {
   background: #ebebeb;
-  box-shadow: 0 1px 0px 0 rgba(255,255,255,0.2);
+  box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
 }
+/* Now the value part */
 progress::-webkit-progress-value {
-  box-shadow: inset 0 1px 1px 0 rgba(255,255,255,0.4);
-  background: -webkit-linear-gradient(45deg,transparent,transparent 33%,rgba(0,0,0,0) 33%,rgba(0,0,0,0) 66%,transparent 66%), -webkit-linear-gradient(top,rgba(255,255,255,0.25),rgba(0,0,0,0)), -webkit-linear-gradient(left,#999ba1,#999ba1);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+  background: -webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0)), -webkit-linear-gradient(left, #999ba1, #999ba1);
 }
 #checkboxes-row {
   background-color: none;
@@ -643,58 +668,92 @@ progress::-webkit-progress-value {
   float: left;
   width: 30%;
 }
+/**********checkbox styles**********/
 input[type="checkbox"] {
   -webkit-appearance: none;
+  /* Hides the default checkbox style */
   height: 1.8em;
+  /*height of checkbox*/
   width: 1.8em;
+  /*width of checkbox*/
   cursor: pointer;
   position: relative;
   line-height: 1.6em;
+  /*placement of checkmark within box*/
   background-color: #ebebeb;
+  /*color of unchecked box*/
   vertical-align: top;
+  /*alignment of checkbox to text*/
 }
 input[type="checkbox"]:checked {
   background-color: #eaca5d;
+  /*color of active state checkbox*/
 }
 input[type="checkbox"]:checked:after {
-  content: 'â��';
+  content: '✓';
+  /*checkmark*/
   line-height: .86em;
+  /*placement of checkmark within box*/
   font-size: 1.5rem;
+  /*checkmark size*/
   padding-left: 10%;
 }
+/**********radio styles**********/
 input[type="radio"] {
   -webkit-appearance: none;
+  /* Hides the default checkbox style */
   height: 1.8em;
   width: 1.8em;
   cursor: pointer;
   position: relative;
   background-color: #ebebeb;
+  /*unactive state color - center of button*/
   vertical-align: middle;
+  /*alignment of radio button to text*/
   border-radius: 50%;
+  /*set circle in unactive state*/
   width: 1.2rem;
+  /*set circle width in unactive state*/
   height: 1.2rem;
-  border: .13rem solid #ebebeb;
+  /*set circle height in unactive state*/
+  border: 0.13rem solid #ebebeb;
+  /*outter circle*/
   box-shadow: inset 0px 0px 0px 2px #3b3c3e;
+  /*sets grey circle within active button*/
 }
 input[type="radio"]:checked {
   background-color: #eaca5d;
+  /*active state color - center of button*/
   border-radius: 50%;
+  /*set circle in active state*/
   width: 1.2rem;
+  /*set circle width in active state*/
   height: 1.2rem;
-  border: .13rem solid #eaca5d;
+  /*set circle height in active state*/
+  border: 0.13rem solid #eaca5d;
+  /*outter circle*/
   box-shadow: inset 0px 0px 0px 2px #3b3c3e;
+  /*sets grey circle within active button*/
 }
+/**********switch styles & transitions**********/
 .ui-flipswitch {
   font-family: 'Oswald', sans-serif;
   color: #3b3c3e;
+  /*color of ON/OFF text*/
   background-color: #999ba1;
+  /*background color for both sides/all of switch*/
   display: inline-block;
   vertical-align: middle;
   width: 5em;
+  /* width of OFF state switch*/
   height: 1.875em;
+  /*height of switches*/
   margin: .4em 0;
+  /*spacing around buttons -bottom, left*/
   overflow: hidden;
   border-radius: 2px;
+  /*curve the edges of all buttons slightly*/
+  /*below are the switch transitions*/
   -webkit-transition-property: padding, width, background-color, color;
   -moz-transition-property: padding, width, background-color, color;
   -o-transition-property: padding, width, background-color, color;
@@ -712,8 +771,11 @@ input[type="radio"]:checked {
 }
 .ui-flipswitch.ui-flipswitch-active {
   padding-left: 3em;
+  /*keeps width of ON state same as OFF state */
   width: 2em;
+  /*width of ON state background color*/
   background-color: #eaca5d;
+  /*background color of ON state*/
 }
 .ui-flipswitch-input {
   position: absolute;
@@ -721,43 +783,54 @@ input[type="radio"]:checked {
   width: 1px;
   margin: -1px;
   overflow: hidden;
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   outline: 0;
-  filter: Alpha(Opacity=0);
+  filter: alpha(opacity=0);
   opacity: 0;
 }
 .ui-flipswitch .ui-btn.ui-flipswitch-on,
 .ui-flipswitch .ui-flipswitch-off {
   float: left;
   height: 1.875em;
+  /*bottom of button length*/
   line-height: 1.85em;
+  /*text height on switches*/
 }
 .ui-flipswitch .ui-btn.ui-flipswitch-on {
   width: 2em;
+  /*width of button in both states*/
   text-indent: -2.15em;
+  /* center ON text on background color */
   text-align: left;
   overflow: visible;
   color: inherit;
   text-shadow: inherit;
   background-color: #ebebeb;
+  /*color of button in ON state, fits right*/
 }
 .ui-flipswitch .ui-flipswitch-off {
   color: #ebebeb;
   background-color: #999ba1;
+  /*color of OFF space (covers button overflow color)*/
   padding: 1px;
   text-indent: .7em;
+  /*center OFF text on background color */
 }
 .ui-flipswitch-active.ui-state-disabled {
   background-color: #999ba1;
+  /*color of ON space (covers button overflow color)*/
 }
 .ui-flipswitch-disabled {
   color: #3b3c3e;
   background-color: #3b3c3e;
+  /*color of ON space (covers button overflow color)*/
 }
+/* Override field container CSS to prevent the flipswitch from becomming full width */
 html .ui-field-contain > label + .ui-flipswitch,
 html .ui-popup .ui-field-contain > label + .ui-flipswitch {
   display: inline-block;
   width: 5em;
+  /* If you override the width for .ui-flipswitch you should repeat the same value here */
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -766,33 +839,44 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 .ui-popup .ui-field-contain .ui-flipswitch.ui-flipswitch-active {
   width: 1.875em;
 }
+/**********beacon styles & transitions**********/
 .beacon {
   position: relative;
 }
 .beacon .marker {
-  color: #eaca5d;
-  border: 3px solid ;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  left: 30px;
+  border: 15px solid #eaca5d;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  left: 150px;
+  /*keep at 30 so circle stays in place*/
   position: absolute;
-  top: 28px;
-  -webkit-animation-name: beacon;
-  -webkit-animation-delay: .1s;
-  -webkit-animation-duration: 1s;
+  -webkit-animation: pulsate 3s ease-out;
   -webkit-animation-iteration-count: infinite;
+  opacity: 0;
 }
-@-webkit-keyframes beacon {
-  from {
-    border-radius: 5px;
-    -webkit-border-radius: 3px;
+#beacon2 {
+  -webkit-animation-delay: 0.6s;
+}
+#beacon3 {
+  -webkit-animation-delay: 1.2s;
+}
+#beacon4 {
+  -webkit-animation-delay: 1.8s;
+}
+#beacon5 {
+  -webkit-animation-delay: 2.4s;
+}
+@-webkit-keyframes pulsate {
+  0 {
+    -webkit-transform: scale(0.1, 0.1);
+    opacity: 0;
   }
-  to {
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    left: 9px;
-    padding: 21px;
-    top: 7px;
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    -webkit-transform: scale(4, 4);
+    opacity: 0;
   }
 }
 #image-row {

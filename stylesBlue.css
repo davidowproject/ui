@@ -841,31 +841,43 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 }
 /**********beacon styles & transitions**********/
 .beacon {
-    position: relative;
+  position: relative;
 }
 .beacon .marker {
-    border: 40px solid @highlightB; /*color of beacon*/
-    border-radius: 40px;/*size of beacon*/
-    -webkit-border-radius: 40px;/*size of beacon*/
-    left: 150px;/*push whole beacon from the left*/
-    position: absolute;/*all my circles stay in place*/
-    top: 100px;/*push whole beacon from the top*/
-    -webkit-animation: pulsate 3s ease-out;/*animation and overall time*/
-    -webkit-animation-iteration-count: infinite;/*this plays forever*/
+  border: 15px solid #4fc5e7;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  left: 150px;
+  /*keep at 30 so circle stays in place*/
+  position: absolute;
+  -webkit-animation: pulsate 3s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0;
 }
-
-#beacon2{-webkit-animation-delay:1s}
-#beacon3{-webkit-animation-delay:2s}
-
-@-webkit-keyframes 
-pulsate{
-  0% {-webkit-transform:scale(0.5,0.5);
-    opacity:.40}
-  25%{opacity:.25}
-  50%{opacity:.175}
-  75%{opacity:.0875}
-  100%{-webkit-transform:scale(4,4);
-    opacity:.0}
+#beacon2 {
+  -webkit-animation-delay: 0.6s;
+}
+#beacon3 {
+  -webkit-animation-delay: 1.2s;
+}
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.5, 0.5);
+    opacity: 0.4;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.175;
+  }
+  75% {
+    opacity: 0.0875;
+  }
+  100% {
+    -webkit-transform: scale(4, 4);
+    opacity: 0;
+  }
 }
 #image-row {
   margin-left: 20%;

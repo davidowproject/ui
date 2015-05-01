@@ -679,7 +679,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
     -webkit-border-radius: 15px;
     left: 150px;/*keep at 30 so circle stays in place*/
     position: absolute;
-    //top: 10px;/*circle opens on itself*/
+    //top: 100px;/*circle opens on itself*/
     -webkit-animation: pulsate 3s ease-out;
     -webkit-animation-iteration-count: infinite;
   opacity:0;
@@ -687,10 +687,17 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 
 #beacon2{-webkit-animation-delay:.6s}
 #beacon3{-webkit-animation-delay:1.2s}
-#beacon4{-webkit-animation-delay:1.8s}
-#beacon5{-webkit-animation-delay:2.4s}
 
-@-webkit-keyframes pulsate{0{-webkit-transform:scale(0.1,0.1);opacity:.0}50%{opacity:.4}100%{-webkit-transform:scale(4,4);opacity:.0}}
+@-webkit-keyframes 
+pulsate{
+  0% {-webkit-transform:scale(0.5,0.5);
+    opacity:.40}
+  25%{opacity:.25}
+  50%{opacity:.175}
+  75%{opacity:.0875}
+  100%{-webkit-transform:scale(4,4);
+    opacity:.0}
+}
 
 #image-row {
   margin-left: 20%;

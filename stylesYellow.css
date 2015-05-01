@@ -860,19 +860,19 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 #beacon3 {
   -webkit-animation-delay: 1.2s;
 }
-#beacon4 {
-  -webkit-animation-delay: 1.8s;
-}
-#beacon5 {
-  -webkit-animation-delay: 2.4s;
-}
 @-webkit-keyframes pulsate {
-  0 {
-    -webkit-transform: scale(0.1, 0.1);
-    opacity: 0;
+  0% {
+    -webkit-transform: scale(0.5, 0.5);
+    opacity: 0.4;
+  }
+  25% {
+    opacity: 0.25;
   }
   50% {
-    opacity: 0.4;
+    opacity: 0.175;
+  }
+  75% {
+    opacity: 0.0875;
   }
   100% {
     -webkit-transform: scale(4, 4);

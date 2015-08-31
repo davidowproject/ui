@@ -8,7 +8,8 @@
 
     <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="stylesYellow.css">
+    <link rel="stylesheet" type="text/css" href="stylesYellow.css" id="dark">
+      <link rel="stylesheet" type="text/css" href="stylesBlue.css" id="light">
 
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
 
@@ -33,6 +34,8 @@
     <div class="title">
         <img src="http://www.utdallas.edu/davidow/img/UT_Dallas_tex_black.png" alt="example-image" class="img-rounded img-responsive">
         <h1 class="demo-section-title">UI Kit - Davidow Collection</h1>
+        <label><input type="radio" name="chooseStyle" value="light">Light</label>
+        <label><input type="radio" name="chooseStyle" value="dark" checked>Dark</label>
     </div>
     <!-- end of logo and title -->
 
@@ -175,9 +178,9 @@
                     </div>
 
                 </nav>
-                
+
                 <!--beacon-->
-                <h3>Beacon</h3>  
+                <h3>Beacon</h3>
                 <BR>
                 <div class="beacon">
                     <i class="marker"></i>
@@ -262,7 +265,7 @@
 
         <div class="col-xs-3" id="switches-col">
                 <h3 class="demo-panel-title">Switches</h3>
-          
+
           <table width="100%">
             <tr>
               <td width="50%" class="pbm">
@@ -378,8 +381,19 @@
             $(".navbar-toggle").click(function() {
                 $("#navbar-collapse-01").toggle();
             });
-            // hides loading that appears bc of jquery 
+            // hides loading that appears bc of jquery
             $('h1:contains("loading")').html('');
+
+            var styles = {
+              light: $("#light").detach(),
+              dark:  $("#dark")
+            };
+
+            $("input[name=chooseStyle]").click(function() {
+              var other = this.value === "light" ? "dark" : "light";
+              styles[this.value].appendTo('head');
+              styles[other].detach();
+            });
         });
     </script>
 
